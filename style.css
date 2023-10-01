@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.header{
+    background-image: url(./293303445_613321876817591_691307799564701801_n.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+
+
+}
+
+.navsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;
+    color: white;
+    margin-top: 20px;
+    width: 85%;
+    margin: auto;
+
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.logo{
+    font-size: 25px;
+}
+
+.logo span{
+    color: rgb(130, 248, 213);
+}
+.navbar ul li{
+    list-style: none;
+    margin-right: 30px;
+    font-size: medium;
+    font-weight: 300;
+}
+.navbar-drop{
+    color: black;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border: 1px solid white;
+    padding: 5px;
+    padding-right: 33px;
+    margin-left: 20p;
+    background-color: rgba(240, 255, 255, 0.534);
+    height: 30%;
+    margin-top: -60px;
+    display: none;
+    position: absolute;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 6px;
+    
+    
+}
+
+
+.navbar-drop ul li{
+    list-style: none;
+    font-size: medium;
+    font-weight: 300;
+    background-color: azure;
+    margin-bottom: 10px;
+    text-align: center;
+
+    padding: 10px;
+    border-radius: 6px;
+}
+#hammenu{
+    width: 35px;
+    filter: invert();
+}
+
+.navbar-drop ul{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+
+}
+
+.checkbox{
+    opacity: 0;
+}
+
+.checkbox:checked ~ .navbar-drop{
+    display: block;
+}
+.contactusbtn{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 7%;
+    font-size: medium;
+}
+
+.herotext{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: 200;
+    text-align: center ;
+    line-height: 75px;
+    letter-spacing: -3px;
+    margin-top: 100px;
+}
+
+.herotext span{
+    font-family: 'Dancing Script', cursive;
+    font-size: larger;
+}
+
+.section2{
+    margin-top: 10px;
+    height: 200px;
+    width: 100%;
+}
+
+.section2{
+    min-height: 100%;
+    background-color: azure;
+}
+
+@media screen and (max-width:875px){
+    .navbar ul{
+        display:none;
+    }
+
+    .contactusbtn{
+        display:none;
+    }
+
+    .herotext{
+        font-size: 65px;
+        margin-top: 50px;
+    }
+
+    .logo{
+        margin-left: -50px;
+    }
+
+    .labellogo #hammenu{
+        margin-left: 100px;
+
+    }
+
+
+ 
+}
+
+
+
+
+@media screen and (min-width:875px){
+    
+    #checkbox{
+        display: none;
+    }
+    
+    #hammenu{
+        display: none;
+    }
+    .navbar-drop{
+        display: none;
+    }
+    
+
+    
+
+}
+
+
+
+
