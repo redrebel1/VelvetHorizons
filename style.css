@@ -48,59 +48,10 @@
     font-size: medium;
     font-weight: 300;
 }
-.navbar-drop{
-    color: black;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    border: 1px solid white;
-    padding: 5px;
-    padding-right: 33px;
-    margin-left: 20p;
-    background-color: rgba(240, 255, 255, 0.534);
-    height: 40%;
-    margin-top: -60px;
-    display: none;
-    position: absolute;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 6px;
-    
-    
-}
 
 
-.navbar-drop ul li{
-    list-style: none;
-    font-size: medium;
-    font-weight: 300;
-    background-color: azure;
-    margin-bottom: 10px;
-    text-align: center;
 
-    padding: 10px;
-    border-radius: 6px;
-}
-#hammenu{
-    width: 35px;
-    filter: invert();
-}
 
-.navbar-drop ul{
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    
-
-}
-
-.checkbox{
-    opacity: 0;
-}
-
-.checkbox:checked ~ .navbar-drop{
-    display: block;
-}
 .contactusbtn{
     background-color: transparent;
     border: 1px solid white;
@@ -121,6 +72,7 @@
     line-height: 75px;
     letter-spacing: -3px;
     margin-top: 100px;
+    z-index: 0;
 }
 
 .herotext span{
@@ -159,7 +111,48 @@
 
     .labellogo #hammenu{
         margin-left: 100px;
+        z-index: 999;
 
+    }
+    .navbar-drop{
+        transition: all 0.2s ease-in-out;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.767);
+        width: 80%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 100px;
+        margin-top: -140px;
+        display: none;
+       
+        
+        
+    }
+
+    .navbar-drop ul{
+        list-style: none;
+        padding-top: 190px;
+        color: white;
+    }
+
+    .navbar-drop ul li{
+        margin-bottom: 30px;
+    }
+    .checkbox{
+        opacity: 0;
+    }
+    
+    .checkbox:checked ~ .navbar-drop{
+        display: block;
+        transition: all 0.2s ease-in-out;
+    }
+    #hammenu{
+        width: 35px;
+        filter: invert();
+        
+        
     }
 
 
@@ -178,14 +171,11 @@
     #hammenu{
         display: none;
     }
-    .navbar-drop{
-        display: none;
     }
     
 
     
 
-}
 
 
 
